@@ -1,0 +1,68 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.hero{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to right, #56ab2f 0%, #a8e063  51%, #7AB730  100%);
+}
+
+form{
+  background-color: white;
+  width: 500px;
+  padding: 30px;
+  font-size: 18px; 
+}
+
+.message-icon{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.message-icon i{
+  font-size: 40px;
+}
+
+.message-icon span{
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+form input, textarea{
+  width: 100%;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid #000;
+  outline: none;
+}
+
+#input-field{
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+#input-field i{
+  font-size: 22px;
+  margin-right: 15px;
+}
+
+.send-btn{
+  width: 100px;
+  border: none;
+  background-color: #000;
+  color: white;
+  font-size: 15px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 50px;
+}
+
