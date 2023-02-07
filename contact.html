@@ -11,6 +11,8 @@
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
+    <link href="assets\images/ss.jpg" rel="icon">
+
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
@@ -23,6 +25,7 @@
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/mail.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -71,14 +74,25 @@
                     <h1 class="m-0 text-primary"><span class="text-dark">WILD</span>ZONE</h1>
                 </a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
+                    <i class="fa fa-bars" style="color: black;"></i>
                 </button>
                 <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
                     <div class="navbar-nav ml-auto py-0">
                         <a href="index.html" class="nav-item nav-link active">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Activities</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
                         <a href="package.html" class="nav-item nav-link">Packages</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Destination</a>
+                            <div class="dropdown-menu border-0 rounded-0 m-0">
+                                <a href="test1.html" class="dropdown-item">Queen Elizabeth</a>
+                                <a href="test.html" class="dropdown-item">Mt.Elgon</a>
+                                <a href="test2.html" class="dropdown-item">Mt.Rwenzori</a>
+                                <a href="test3.html" class="dropdown-item">Murchison Falls</a>
+                                <a href="test4.html" class="dropdown-item">Kibale Park</a>
+                                <a href="test5.html" class="dropdown-item">Bwindi Impenetrable</a>
+                            </div>
+                        </div>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>
@@ -93,7 +107,7 @@
             <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
                 <h3 class="display-4 text-white text-uppercase">Contact</h3>
                 <div class="d-inline-flex text-white">
-                    <p class="m-0 text-uppercase"><a class="text-white" href="">Home</a></p>
+                    <p class="m-0 text-uppercase"><a class="text-white" href="index.html">Home</a></p>
                     <i class="fa fa-angle-double-right pt-1 px-3"></i>
                     <p class="m-0 text-uppercase">Contact</p>
                 </div>
@@ -112,36 +126,41 @@
             <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">CONTACT</h6>
             <h1>Contact For Any Query</h1>
         </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="service-item bg-white text-center mb-2 py-5 px-4">
-                    <i class="fa fa-2x fa-phone mx-auto mb-4"></i>
-                    <h5 class="mb-2">Telephone Number</h5>
-                    <p class="m-0">Feel free to contact Us on Our Telephone Number Below</p>
-                    <br><h5><b>+256700445025</b></h5>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="service-item bg-white text-center mb-2 py-5 px-4">
-                    <i class="fa fa-2x fa-phone mx-auto mb-4"></i>
-                    <h5 class="mb-2">Whatsapp</h5>
-                    <p class="m-0">Feel free to message Us on Whatsapp Below</p>
-                    <br><a href="https://api.whatsapp.com/send?phone= 256700445025&text=hey%20there%%I%am%requiring%about%wildzone%bookings." class="btn btn-primary mt-1" style="border-radius: 25px;">Whatsapp</a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="service-item bg-white text-center mb-2 py-5 px-4">
-                    <i class="fa fa-2x fa-phone mx-auto mb-4"></i>
-                    <h5 class="mb-2">Email</h5>
-                    <p class="m-0">Feel Free to Message us on Our email Below</p>
-                   <br><h5>wildzonesafaris@gmail.com</h5>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+        
+<!--Mail Form Starts here-->
 
-<!-- Contact ends Here -->
+  <div class="hero">
+    <form action="https://formspree.io/f/mrgvpbqp" method="POST">
+      <div class="message-icon">
+        <i class="bi bi-telegram"></i>
+        <span>Message</span>
+      </div>
+
+      <div id="input-field">
+        <i class="fa fa-user-circle"></i>
+        <input type="text" placeholder="Name" name="Name">
+      </div>
+
+      <div id="input-field">
+        <i class="fa fa-envelope"></i>
+        <input type="text" placeholder="Email Address" name="Email">
+      </div>
+
+      <div id="input-field">
+        <i class="fa fa-phone-alt"></i>
+        <input type="text" placeholder="Telephone No. (optional)" name="Phone">
+      </div>
+
+      <div id="input-field">
+        <i class="fa fa-comment-o"></i>
+        <textarea name="Message" placeholder="Message" rows="10"></textarea>
+      </div>
+        <input type="submit" value="submit" class="send-btn">
+      
+    </form>
+  </div>
+
+<!--Email Form edns here-->
 
 
     <!-- Footer Start -->
@@ -193,7 +212,7 @@
                 </p>
             </div>
             <div class="col-lg-6 text-center text-md-right">
-                <p class="m-0 text-white-50">Designed by <a href="owenmicheal.github.io/-/">Micheal Owen</a>
+                <p class="m-0 text-white-50">Designed by <a href="https:owenmicheal.github.io/-/">Micheal Owen</a>
                 </p>
             </div>
         </div>
